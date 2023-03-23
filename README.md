@@ -2,7 +2,28 @@
 ## 대림대학교 컴퓨터정보학부 - React.js
 <hr/>
 ## 4주차 - 2023.03.23 (목)
-###
+### JSX
+> JavaScript에 XML을 결합하여 확장한 문법.
+>> 객체를 표현한다.
+
+***Example***
+
+``` javascript
+const element = <h1> Hello </h1>
+```
+이외에도 표현식이 들어갈 수 있다.
+
+- 내부적으로 XML HTML 코드를 JS로 변환
+- React가 createElemennt 함수를 사용하는 코드로 자동으로 변환
+- JSX를 사용하지 않으면 직접 createElement를 사용해야 하므로 가독성이 떨어진다.
+- Injection Attack을 방어함으로써 보안성 향상
+- ***{ }*** 을 삽입하여 js 코드 삽입 가능
+
+### Babel
+> JSX 컴파일러
+
+
+
 
 <hr/>
 ## 📕 3주차 - 2023.03.16 (목)
