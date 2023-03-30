@@ -2,6 +2,78 @@
 ## 대림대학교 컴퓨터정보학부 - React.js
 <hr/>
 
+## 📕 5주차 - 2023.03.30 (목)
+### Element
+- 리액트 엘리먼트는 JS 객체 형태로 존재한다.
+- 컴포넌트, 속성 및 내부의 모든 children을 포함하는 일반 JS 객체.
+- 리액트 엘리먼트의 가장 큰 특징은 불변성
+    - 즉, 한 번 생성된 Children이나 속성을 바꿀 수 없다.
+
+### clock 실습 - CDN 방식
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="root">
+    </div>
+
+    <script type="text/babel">
+        function tick() {
+            const element = (
+                <div>
+                    <h1>안녕, 리액트</h1>
+                    <h2>현재 시간 : {new Date().toLocaleDateString()}</h2>
+                </div>
+            );
+            ReactDOM.render(element, document.getElementById('root'));
+        }
+
+        setInterval(tick, 1000);
+    </script>
+</body>
+</html>
+```
+### Clock 실습 - React.js Component
+```javascript
+import React from "react";
+
+const Clock = (props) => {
+    return(
+        <div>
+            <h1>안녕, 리액트!</h1>
+            <h2>현재시간 : {new Date().toLocaleDateString()}</h2>
+        </div>
+    )
+
+}
+
+export default Clock;
+```
+### Props
+- 읽기 전용, 변경 불가
+- 속성이 다른 엘리먼트를 생성하려면 새로운 Props를 컴포넌트에 전달
+
+### Pure Func vs Impure Func
+- Pure 함수는 파라미터로 받은 정보가 함수 내부에서도 변하지 않는 함수.
+- Impure 함수는 파라미터로 받은 정보가 함수 내부에서 변하는 함수
+
+### Component
+컴포넌트명은 항상 대문자로 시작 (CamelCase)
+
+<b>클래스형 컴포넌트</b>
+현재는 잘 사용되지 않음.
+
+<b>함수형 컴포넌트</b>
+Hook의 등장으로 state 사용이 원활해짐.
 ## 📕 4주차 - 2023.03.23 (목)
 ### JSX
 > JavaScript에 XML을 결합하여 확장한 문법.
