@@ -5,12 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CommentList from "./Chapter_05/CommentList";
 import NotificationList from "./Chapter_06/NotificationList";
+import Accommodate from "./Chapter_07/Accommodate";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-      <NotificationList/>
+      <Accommodate/>
     </React.StrictMode>
 );
 
