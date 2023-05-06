@@ -3,17 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import CommentList from "./Chapter_05/CommentList";
-import NotificationList from "./Chapter_06/NotificationList";
-import Accommodate from "./Chapter_07/Accommodate";
-import ConfirmButton from "./chapter_08/ConfirmButton";
-import LandingPage from "./chapter_10/LandingPage";
+import AttendanceBook from "./chapter_10/AttendanceBook";
+import SignUp from "./chapter_11/SignUp";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-      <LandingPage/>
+      <SignUp/>
     </React.StrictMode>
 );
 
